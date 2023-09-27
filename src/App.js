@@ -1,5 +1,5 @@
 import './App.css';
-import UserCard from './components/UserCard';
+import { UserCard } from './components/UserCard';
 
 const utilisateur = {
   nom: "Doe",
@@ -11,7 +11,7 @@ const utilisateur = {
 function App() {
   return (
     <div className="container">
-      <UserCard nom={utilisateur.nom} prenom={utilisateur.prenom} email={utilisateur.prenom} image={utilisateur.ImageUrl}/>
+      <UserCard nom={utilisateur.nom} prenom={utilisateur.prenom} email={utilisateur.email} image={utilisateur.ImageUrl}/>
     </div>
   );
 }

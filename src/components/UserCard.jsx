@@ -1,11 +1,14 @@
 import { Component } from "react";
 
-class UserCard extends Component {
+export class UserCard extends Component {
     render() { 
-        return <div>
-            
+        return <div className="card">
+            <img src={this.props.image} alt={this.props.nom} />
+            <div>
+                <h1>{this.props.nom} {this.props.prenom}</h1>
+                <p>{this.props.email}</p>
+            </div>
         </div>;
     }
 }
  
-export default UserCard;
