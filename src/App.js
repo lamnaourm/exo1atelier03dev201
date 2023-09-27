@@ -1,8 +1,9 @@
 import './App.css';
+import UserCard from './components/UserCard';
 
 const utilisateur = {
   nom: "Doe",
-  prénom: "John",
+  prenom: "John",
   email: "john.doe@example.com",
   ImageUrl: "https://icones.pro/wp-content/uploads/2021/03/avatar-de-personne-icone-homme.png",
  };
@@ -10,7 +11,7 @@ const utilisateur = {
 function App() {
   return (
     <div className="container">
-      
+      <UserCard nom={utilisateur.nom} prenom={utilisateur.prenom} email={utilisateur.prenom} image={utilisateur.ImageUrl}/>
     </div>
   );
 }
